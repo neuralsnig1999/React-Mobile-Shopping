@@ -5,9 +5,11 @@ import {
   RiArrowDropDownLine,
 } from "react-icons/all";
 // import data from '../db.json'
+import {Link} from 'react-router-dom';
 
 const Header = (props) => {
-  console.log("props", props);
+  const {cart} = props;
+  console.log("props", cart, props);
   return (
     <div
       style={{
@@ -29,10 +31,13 @@ const Header = (props) => {
         <FaUserCircle size="50px" />
         <p style={{ padding: "0px 0px 0px 12px" }}>User name</p>
         <RiArrowDropDownLine size="50px" />
-        <GiShoppingCart size="50px" />
+        <Link to = {`/cart/${cart.join('|')}`}>
+        <GiShoppingCart size="50px" color='black' />
+        </Link>
       </div>
     </div>
   );
 };
+
 
 export default Header;
