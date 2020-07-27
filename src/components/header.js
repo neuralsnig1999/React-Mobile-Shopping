@@ -31,7 +31,7 @@ const Header = (props) => {
         <FaUserCircle size="50px" />
         <p style={{ padding: "0px 0px 0px 12px" }}>User name</p>
         <RiArrowDropDownLine size="50px" />
-        <Link to = {`/cart/${cart.join('|')}`}>
+        <Link to = {`/cart${cart.join('|')}`}>
         <GiShoppingCart size="50px" color='black' />
         </Link>
       </div>

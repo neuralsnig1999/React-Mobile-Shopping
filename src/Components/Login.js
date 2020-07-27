@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { MdSettingsRemote } from 'react-icons/md';
 
 
 

@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/dashboard" component={List}></Route>
         <Route path="/details" component={Details}></Route>
         <Route
-          path="/cart/:ids"
+          path="/cart:ids"
           render={(props) => <AddToCart {...props} />}
         ></Route>
       </Switch>
