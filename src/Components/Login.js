@@ -13,7 +13,7 @@ class Login extends Component {
 
                
         };
-        console.log(this.props) 
+        console.log("this.props", this.props) 
     };
 
     handleUsernameChange = (event) =>{
@@ -40,10 +40,10 @@ class Login extends Component {
             }
         
         else{
-
+            // localStorage.setItem({"name":name, "Pass":name});
             
 
-            //this.props.history.push('/details');
+            this.props.history.push('/dashboard');
         }   
     }
 
